@@ -20,7 +20,7 @@ BuildRequires: g++ >= 5.0
 BuildRequires: simde-devel
 BuildRequires: json-devel
 
-Requires:%{name}-libs%{?_isa} = %{version}-%{release}
+Requires: %{name}-libs%{?_isa} = %{version}-%{release}
 
 
 %description
@@ -31,7 +31,8 @@ software H.266/VVC encoder implementation
 %package devel
 Summary: Header files for vvenc development
 
-Requires:%{name}%{?_isa} = %{version}-%{release}
+Requires: %{name}%{?_isa} = %{version}-%{release}
+Requires:%{name}-libs%{?_isa} = %{version}-%{release}
 
 %description devel
 The vvenc-devel package contains the header files needed
