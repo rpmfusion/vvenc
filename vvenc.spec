@@ -1,5 +1,5 @@
 %global forgeurl0 https://github.com/fraunhoferhhi/vvenc
-Version: 1.13.1
+Version: 1.14.0
 %global tag0 v%{version}
 
 %forgemeta
